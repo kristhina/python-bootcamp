@@ -2,7 +2,7 @@ from random import shuffle
 
 
 class Card:
-    def __init__(self, card_suit=None, card_rank=None, card_value=[]):
+    def __init__(self, card_suit, card_rank, card_value):
         self._card_value = card_value
         self._card_suit = card_suit
         self._card_rank = card_rank
@@ -35,12 +35,12 @@ class DeckOfCards:
 
 class Player:
     def __init__(self, name="Player", balance=1000):
-        self.name = name
+        self._name = name
         self._balance = balance
 
     def set_name(self):
-        self.name = input("What is your name? ")
-        return self.name
+        self._name = input("What is your name? ")
+        return self._name
 
     def set_balance(self):
         #if won self.balance += Game.stake
@@ -51,13 +51,9 @@ class Player:
         return self._balance
 
 
-
 class Hand:
     def __init__(self):
         pass
-
-    dealers_hand = None
-    players_hand = None
 
     def score_hand(self):
         pass
@@ -65,8 +61,9 @@ class Hand:
 
 class Game:
     def __init__(self, stake=100):
-        self.players_hand = []
-        self.dealers_hand = []
+        self.players_hand = Hand()
+        self.dealers_hand = Hand()
+        self.player = Player()
         self.stake = stake
 
     def show_menu(self):
@@ -76,23 +73,29 @@ class Game:
         print("b - set player's name")
         print("c - restart the game")
         print("d - finish game")
-        decision = input("Choose one: a, b, c or d ")
+
         while True:
+            decision = input("Choose one: a, b, c or d ")
             if decision == "a":
                 pass
             elif decision == "b":
-                Player.set_name()
+                self.player.set_name()
             elif decision == "c":
                 pass
             elif decision == "d":
                 self.finish_game()
             else:
-                decision = input("You should write: a, b, c or d ")
-                continue
-    #to mi się nie podoba, muszę sobie przemyśleć, jak lepiej ma działać to menu
+                print("You should write: a, b, c or d ")
+     #to mi się nie podoba, muszę sobie przemyśleć, jak lepiej ma działać to menu
 
     def finish_game(self):
         exit()
 
     def restart(self):
         pass
+
+def main():
+    new_game = Game()
+    new_game.show_menu()
+
+main()
