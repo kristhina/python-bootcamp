@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3b0e99e9-0d66-4deb-a358-fc6e2adccd5f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.py" afterPath="$PROJECT_DIR$/game.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -250,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505571093909</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="BlackJack praca nad klasą Hand i Game">
+      <created>1505736111410</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1505736111410</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -282,7 +288,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BlackJack poprawki obiektów Hand" />
-    <option name="LAST_COMMIT_MESSAGE" value="BlackJack poprawki obiektów Hand" />
+    <MESSAGE value="BlackJack praca nad klasą Hand i Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="BlackJack praca nad klasą Hand i Game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
