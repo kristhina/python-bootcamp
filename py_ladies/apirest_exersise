@@ -1,0 +1,22 @@
+import requests
+# resp = requests.get('http://py.net/status')
+# print(resp.json())
+# resp = requests.post('http://py.net/status/set', json={"status": "Nowy status"})
+# print(resp.json())
+# resp = requests.get('http://py.net/status')
+# print(resp.json())
+
+
+# zd2 = requests.post('http://py.net/register', json = {"name": "Krysia", "password": "lalala"})
+# print(zd2.json())
+
+# zd3 = requests.post('http://py.net/auth', json = {"name": "Krysia", "password": "lalala"} )
+# print(zd3.json())
+#
+# zd4 = requests.post('http://py.net/user_status/set', json={"api_key": '0bdb9600a38ce1243fa35aae9819557ceb7497e70a1aa250b5804b2102744043', "status": "Bleeee"})
+#
+# print(zd4.json())
+#
+# zd42 = requests.get('http://py.net/user_status')
+# print(zd42.json()['MadCat'])
+
