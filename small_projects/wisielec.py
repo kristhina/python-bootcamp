@@ -2,9 +2,10 @@ from random import choice
 
 lista_wyrazow = ["krowa", "krokodyl", "szklanka", "pisanka", "elementarz", "figurka", "truskawka", "malina"]
 
+
 def losowanie_wyrazu(lista):
-    wyraz = choice(lista)
-    return wyraz
+    return choice(lista)
+
 
 def poczatek_gry():
     decyzja = None
@@ -17,30 +18,30 @@ def poczatek_gry():
     if decyzja == 'b':
         koniec_gry()
 
+
 def koniec_gry():
     exit()
 
-def pytanie_o_litere():
-    zgadywana_litera = input("Podaj literę: ")
-    return zgadywana_litera
 
 def gra():
     poczatek_gry()
-    i = 0
+    errors = 0
     zgadywany_wyraz = losowanie_wyrazu(lista_wyrazow)
     lista_znakow = len(zgadywany_wyraz) * ['-']
     print(lista_znakow)
-    while '-' in lista_znakow and i < 10:
-        i+=1
-        litera = pytanie_o_litere()
+    while '-' in lista_znakow and errors < 10:
+        litera = input("Podaj literę: ")
         n = 0
+        found = False
         for znak in zgadywany_wyraz:
             if znak == litera:
                 lista_znakow[n] = litera
-                i-=1
+                found = True
             n += 1
+        if found == False:
+            errors += 1
         print(lista_znakow)
-    if i == 10:
+    if errors == 10:
         print("Przykro mi! Nie zgadłeś!")
     else:
         print('Brawo! Zgadłeś!')
@@ -49,4 +50,3 @@ def gra():
 
 
 gra()
-
