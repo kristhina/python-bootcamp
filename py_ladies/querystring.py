@@ -11,5 +11,5 @@
 # }
 
 import requests
-zad = requests.get("http://py.net/query_string")
+zad = requests.get("http://py.net/query_string?co=1&kolwiek=2")
 print(zad.json())
