@@ -22,7 +22,6 @@ def species_check(url, search_name):
 
 
 gungan = species_check("https://swapi.co/api/species/", "Gungan")
-print(gungan)
 
 for person in gungan["people"]:
     url = person + "?format=wookiee"
