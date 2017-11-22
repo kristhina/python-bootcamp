@@ -17,15 +17,15 @@ class Czlowiek:
         #niedowaga 18,5
         #nadwaga 25
         if self.bmi <18.5:
-            oczekiwana_waga = 18.5 / self.wzrost ** 2
+            oczekiwana_waga = 18.5 * (self.wzrost*0.01) ** 2
             roznica = oczekiwana_waga - self.waga
-            print("Musisz przytyć{} kg.".format(roznica))
+            print("Musisz przytyć {} kg.".format(roznica))
         elif self.bmi > 25:
-            oczekiwana_waga = 25 / self.wzrost ** 2
-            roznica = oczekiwana_waga - self.waga
-            print("Musisz schudnąć{} kg.".format(roznica))
+            oczekiwana_waga = 25 * (self.wzrost*0.01) ** 2
+            roznica = self.waga - oczekiwana_waga
+            print("Musisz schudnąć {} kg.".format(roznica))
         else:
-            print("Ważysz idealnie")
+            print("Ważysz idealnie :)")
 
 
 
@@ -35,34 +35,49 @@ class Czlowiek:
             json.dump({"imie": self.imie, "waga": self.waga, "wzrost": self.wzrost}, file)
 
     def to_burn(self):
-        # Zakładając, że aby schudnąć 1 kg trzeba spalić 6000kcal,
-    # napisz funkcjonalność, która powie użytkownikowi,
-    # ile powinien godzin biegać(500kcal/h) /
-    # jeździć rowerem(600kcal/h) /
-    # uprawiać hobby(250kcal/h) /
-    # grać w szachy(150kcal/h) / etc. aby być w normie (to_burn).
+        #ile kalorii tracimy przy określonej czynności
         bieganie = 500
         rower = 600
         hobby = 250
         szachy = 150
 
-        oczekiwana_waga = 25 / self.wzrost ** 2
-        roznica = oczekiwana_waga - self.waga
-        if roznica < 0:
+        oczekiwana_waga = 25 * (self.wzrost*0.01) ** 2
+        roznica = self.waga - oczekiwana_waga
+        if self.bmi < 25:
             print("Nie musisz nic schudnąć")
         else:
             liczba_kalorii_do_spalenia = roznica*6000
-            godziny_biegania = liczba_kalorii_do_spalenia/bieganie
-            godziny_roweru = liczba_kalorii_do_spalenia/rower
-            godziny_hobby = liczba_kalorii_do_spalenia/hobby
-            godziny_szachy = liczba_kalorii_do_spalenia/szachy
+            godziny_biegania = round(liczba_kalorii_do_spalenia/bieganie)
+            godziny_roweru = round(liczba_kalorii_do_spalenia/rower)
+            godziny_hobby = round(liczba_kalorii_do_spalenia/hobby)
+            godziny_szachy = round(liczba_kalorii_do_spalenia/szachy)
             print("Żeby schudnąć do dobrej wagi musisz biegać przez {} godzin, jeździć na rowerze przez {} godzin, uprawiać hobby przez {} godzin albo grać w szachy przez {} godzin.".format(godziny_biegania, godziny_roweru, godziny_hobby, godziny_szachy))
 
     def to_eat(self):
-        pass
+        ziemniaki = 300
+        czekolada = 500
+
+        oczekiwana_waga = 18.5 * (self.wzrost * 0.01) ** 2
+        roznica = oczekiwana_waga - self.waga
+        if self.bmi > 18.5:
+            print("Nie musisz nic przytyć")
+        else:
+            liczba_kalorii_do_przyjecia = 6000 * roznica
+            ziemniaki_do_zjedzenia = round(liczba_kalorii_do_przyjecia/ziemniaki)
+            czekolada_do_zjedzenia = round(liczba_kalorii_do_przyjecia/czekolada)
+            print("Żeby przytyć do dobrej wagi musisz zjeść {} ziemniaków albo {} czekolady".format(ziemniaki_do_zjedzenia, czekolada_do_zjedzenia))
+
 
     def what_to_do(self):
-        pass
+        if self.bmi < 18.5:
+            print("Jesteś za chudy, musisz trochę przytyć")
+            self.to_eat()
+        elif self.bmi > 25:
+            print("Ważysz za dużo, musisz trochę schudnąć")
+            self.to_burn()
+        else:
+            print("Ważysz idealnie! Tak trzymaj!")
+
 
 class Polityk(Czlowiek):
     lapowka = False
@@ -76,11 +91,11 @@ class Polityk(Czlowiek):
     def recive_bribe(self):
         self.lapowka = True
 
-pol = Polityk("arnold", 150, 90)
+pol = Polityk("arnold", 150, 20)
 pol.speak()
 pol.recive_bribe()
 pol.speak()
 print(pol.bmi)
 pol.save_data()
 pol.diff_to_norm()
-pol.to_burn()
+pol.what_to_do()

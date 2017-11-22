@@ -11,50 +11,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tatooin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tatooin.py">
+      <file leaf-file-name="obiekty1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/obiekty1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding>
-                <element signature="e#95#110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="species.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/species.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="millenium_falcon.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/millenium_falcon.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gungan_in_wookie.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gungan_in_wookie.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="575">
+              <caret line="93" column="32" lean-forward="false" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,6 +58,7 @@
         <option value="$PROJECT_DIR$/species.py" />
         <option value="$PROJECT_DIR$/millenium_falcon.py" />
         <option value="$PROJECT_DIR$/gungan_in_wookie.py" />
+        <option value="$PROJECT_DIR$/obiekty1.py" />
       </list>
     </option>
   </component>
@@ -120,7 +83,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -133,6 +95,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gungan_in_wookie">
+  <component name="RunManager" selected="Python.obiekty1">
     <configuration name="gungan_in_wookie" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,7 +154,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="querystring" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="obiekty1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -203,7 +166,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="py_ladies" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/querystring.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/obiekty1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,19 +206,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.querystring" />
-      <item index="1" class="java.lang.String" itemvalue="Python.tatooin" />
-      <item index="2" class="java.lang.String" itemvalue="Python.species" />
-      <item index="3" class="java.lang.String" itemvalue="Python.millenium_falcon" />
-      <item index="4" class="java.lang.String" itemvalue="Python.gungan_in_wookie" />
+      <item index="0" class="java.lang.String" itemvalue="Python.tatooin" />
+      <item index="1" class="java.lang.String" itemvalue="Python.species" />
+      <item index="2" class="java.lang.String" itemvalue="Python.millenium_falcon" />
+      <item index="3" class="java.lang.String" itemvalue="Python.gungan_in_wookie" />
+      <item index="4" class="java.lang.String" itemvalue="Python.obiekty1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.gungan_in_wookie" />
-        <item index="1" class="java.lang.String" itemvalue="Python.millenium_falcon" />
-        <item index="2" class="java.lang.String" itemvalue="Python.species" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tatooin" />
-        <item index="4" class="java.lang.String" itemvalue="Python.querystring" />
+        <item index="0" class="java.lang.String" itemvalue="Python.obiekty1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.gungan_in_wookie" />
+        <item index="2" class="java.lang.String" itemvalue="Python.millenium_falcon" />
+        <item index="3" class="java.lang.String" itemvalue="Python.species" />
+        <item index="4" class="java.lang.String" itemvalue="Python.tatooin" />
       </list>
     </recent_temporary>
   </component>
@@ -333,22 +296,17 @@
           <line>19</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/obiekty1.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tatooin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#95#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -647,9 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,18 +613,15 @@
         <state relative-caret-position="450">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tatooin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="486">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="e#95#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,17 +629,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gungan_in_wookie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="0">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obiekty1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="93" column="32" lean-forward="false" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
