@@ -1,3 +1,5 @@
+import builtins
+
 class Czas:
     def __init__(self, godziny = 19, minuty = 17, sekundy = 30):
         self.g = godziny
@@ -92,8 +94,14 @@ class DokladnyZegar(Zegar):
                         self.m -= mtg * 60
 
 
-def mojprint():
-    pass
+def mojprint(text, liczba_wydrukow, prefix, **kwargs):
+    for i in range(liczba_wydrukow):
+        print(prefix + text)
+
+def mojprint2(*args, liczba_wydrukow, prefix = None, **kwargs):
+    for i in range(liczba_wydrukow):
+        builtins.print(prefix, *args, **kwargs)
+
 
 n_czas = Czas(0, 2, 45)
 print(n_czas.g)
@@ -134,3 +142,4 @@ print(dz.get_hours())
 # @classmethod
 # def _get_name(cls):
 #     return cls.__name__
+
