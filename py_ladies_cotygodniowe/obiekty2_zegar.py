@@ -1,4 +1,6 @@
 import builtins
+from unittest import TestCase
+
 
 class Czas:
     def __init__(self, godziny = 19, minuty = 17, sekundy = 30):
@@ -98,48 +100,53 @@ def mojprint(text, liczba_wydrukow, prefix, **kwargs):
     for i in range(liczba_wydrukow):
         print(prefix + text)
 
-def mojprint2(*args, liczba_wydrukow, prefix = None, **kwargs):
-    for i in range(liczba_wydrukow):
-        builtins.print(prefix, *args, **kwargs)
+
+def mojprint2(*args, ile_razy, prefix=None, **kwargs):
+    for i in range(ile_razy):
+        nowe = (prefix,) + args if prefix is not None else args
+        print(*nowe, **kwargs)
 
 
-n_czas = Czas(0, 2, 45)
-print(n_czas.g)
-print(n_czas.m)
-print(n_czas.s)
-n_czas.add_time(s = 20)
-print(n_czas)
+mojprint2("as", "be", ile_razy=3, prefix="P", end="22222\n")
+mojprint2("prefix", ile_razy=3)
 
-zegar = Zegar(format = '24H', godziny = 12, minuty=34, sekundy=3)
-print(zegar.g)
-zegar.set_time(nowe_godziny=13)
-print(zegar.g)
-
-dz = DokladnyZegar(format = '12H', godziny = 20)
-print(dz.g)
-print(dz.format)
-print(dz.ms)
-
-print(n_czas)
-print(zegar)
-print(dz)
-
-dz.add_time(ms = 2345, g=17, m=29, s = 78)
-print(dz)
-dz.set_time(ms = 0, nowe_sekundy = 0, nowe_minuty = 10, nowe_godziny=10)
-print(dz)
-print(dz.get_seconds())
-print(dz.get_minutes())
-print(dz.get_hours())
-
-# def __str__(self):
-#     temp = "{} ".format(self._get_name())
-#     for atr in vars(self)
-#         if not atr.startswith('_'):
-#         temp += "{}={} ".format(atr, getattr(self, atr))
-#     return temp
+# n_czas = Czas(0, 2, 45)
+# print(n_czas.g)
+# print(n_czas.m)
+# print(n_czas.s)
+# n_czas.add_time(s = 20)
+# print(n_czas)
 #
-# @classmethod
-# def _get_name(cls):
-#     return cls.__name__
-
+# zegar = Zegar(format = '24H', godziny = 12, minuty=34, sekundy=3)
+# print(zegar.g)
+# zegar.set_time(nowe_godziny=13)
+# print(zegar.g)
+#
+# dz = DokladnyZegar(format = '12H', godziny = 20)
+# print(dz.g)
+# print(dz.format)
+# print(dz.ms)
+#
+# print(n_czas)
+# print(zegar)
+# print(dz)
+#
+# dz.add_time(ms = 2345, g=17, m=29, s = 78)
+# print(dz)
+# dz.set_time(ms = 0, nowe_sekundy = 0, nowe_minuty = 10, nowe_godziny=10)
+# print(dz)
+# print(dz.get_seconds())
+# print(dz.get_minutes())
+# print(dz.get_hours())
+#
+# # def __str__(self):
+# #     temp = "{} ".format(self._get_name())
+# #     for atr in vars(self)
+# #         if not atr.startswith('_'):
+# #         temp += "{}={} ".format(atr, getattr(self, atr))
+# #     return temp
+# #
+# # @classmethod
+# # def _get_name(cls):
+# #     return cls.__name__
+#
