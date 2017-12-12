@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47b953c9-6c47-450a-a683-cdbde75f7774" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/templates/formularz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/zad4_html.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/zad5_html.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py_ladies_cotygodniowe/templates/hello.html" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/templates/hello.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/py_ladies_cotygodniowe/zad3_html.py" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/zad3_html.py" />
-    </list>
+    <list default="true" id="47b953c9-6c47-450a-a683-cdbde75f7774" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
