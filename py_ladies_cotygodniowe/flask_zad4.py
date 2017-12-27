@@ -7,7 +7,7 @@
 
 from flask import Flask, request
 
-app = flask(__name__)
+app = Flask(__name__)
 
 @app.route("/planet-details", methods = ["GET"])
 def planet_details():

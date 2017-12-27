@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, json
 
 app = Flask(__name__)
 
@@ -20,5 +20,12 @@ def login(username):
     else:
         return "Wrong password"
 
+@app.route("/users", methods = ["GET"])
+def get_users():
+    return json.dumps(list(users.keys()))
+
+@app.route("/users/count", methods = ["GET"])
+def get_number_of_users():
+    return json.dumps({'count': len(users)})
 
 app.run(debug = True)
