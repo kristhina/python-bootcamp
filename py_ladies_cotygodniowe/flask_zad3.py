@@ -12,5 +12,13 @@ def set_password(username):
     users[username] = new_password
     return "Set password of {} to '{}'".format(username, new_password)
 
+@app.route("/user/<username>/login", methods = ["POST"])
+def login(username):
+    data = request.get_json()
+    if username in users and users[username] == data["password"]:
+        return "Login successful"
+    else:
+        return "Wrong password"
+
 
 app.run(debug = True)
