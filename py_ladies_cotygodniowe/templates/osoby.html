@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>osoby</title>
+</head>
+<body>
+<table border>
+    <tr>
+        <th>
+            imie
+        </th>
+        <th>
+            nazwisko
+        </th>
+        <th>
+            wiek
+        </th>
+    </tr>
+    {% for osoba in osoby %}
+    <tr>
+        <td>
+            {{ osoba.imie }}
+        </td>
+        <td>
+            {{ osoba.nazwisko }}
+        </td>
+        <td>
+            {{ osoba.wiek }}
+        </td>
+    </tr>
+    {% endfor %}
+
+
+</table>
+
+</body>
+</html>

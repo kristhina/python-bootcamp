@@ -9,12 +9,12 @@ from flask import Flask, request
 import requests
 import json
 
-
 app = Flask(__name__)
 
-@app.route("/planet-details", methods = ["GET"])
+
+@app.route("/planet-details", methods=["GET"])
 def planet_details():
-    planet_name = request.args("planet")
+    planet_name = request.args.get("planet")
     planet_resp = requests.get("https://swapi.co/api/planets/?search=" + planet_name)
     if planet_resp.status_code != 200:
         return json.dumps({"response": "There is an error!"})
@@ -22,4 +22,5 @@ def planet_details():
     planet_data = planets[0]
     return json.dumps({"climate": planet_data['climate'], "population": planet_data['population']})
 
-app.run(debug = True)
+
+app.run(debug=True)
