@@ -1,3 +1,5 @@
+import uuid
+
 from flask import Flask, request, json
 
 app = Flask(__name__)
@@ -16,7 +18,7 @@ def set_password(username):
 def login(username):
     data = request.get_json()
     if username in users and users[username] == data["password"]:
-        return "Login successful"
+        return str(uuid.uuid4())
     else:
         return "Wrong password"
 

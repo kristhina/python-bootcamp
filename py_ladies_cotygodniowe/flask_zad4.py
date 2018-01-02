@@ -19,6 +19,8 @@ def planet_details():
     if planet_resp.status_code != 200:
         return json.dumps({"response": "There is an error!"})
     planets = planet_resp.json()['results']
+    if not planets:
+        return json.dumps({"response": "planet {} doesn't exist".format(planet_name)})
     planet_data = planets[0]
     return json.dumps({"climate": planet_data['climate'], "population": planet_data['population']})
 
