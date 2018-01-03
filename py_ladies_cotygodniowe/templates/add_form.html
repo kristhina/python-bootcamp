@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form adding 2 numbers</title>
+</head>
+<body>
+    {% if liczba1 and liczba2 %}
+    {{ liczba1 }} + {{ liczba2 }} = {{liczba1|int + liczba2|int}}
+    {% endif %}
+
+    <form action="/add_form" method="post">
+        <input type="text" name="liczba1">
+        <input type="text" name="liczba2">
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
