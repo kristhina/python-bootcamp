@@ -6,7 +6,8 @@
 
 from flask import Flask, render_template, request
 
-zespoly = ["U2", "Coldplay", "The Kelly Family"]
+zespoly = ["U2", "Coldplay", "The Kelly Family", "Pink Floyd", "Queen", "Led Zeppelin",
+           "The Beatles", "Nirvana", "Aerosmith", "Piano Guys", "Eagles", "The Doors"]
 
 
 app = Flask(__name__)
@@ -14,7 +15,9 @@ app = Flask(__name__)
 
 @app.route("/zespoly", methods=["GET", "POST"])
 def zespoly_lista():
-    return render_template("lista_zespolow.html", lista_zespolow=zespoly)
+    fragment = request.form.get('fragment')
+    return render_template("lista_zespolow.html", lista_zespolow=zespoly,
+                           fragment=fragment)
 
 
 app.run(debug=True)

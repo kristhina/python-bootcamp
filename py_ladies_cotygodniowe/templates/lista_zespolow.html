@@ -5,13 +5,38 @@
     <title>Lista Zespołów</title>
 </head>
 <body>
+
+
 <h1>
-    Lista zespołów
+    Wpisz fragment nazwy wyszukiwanego zespołu
 </h1>
-{% for zespol in lista_zespolow %}
-    <ul>
-        {{zespol}}
-    </ul>
-{% endfor %}
+
+    <form action="/zespoly" method="post">
+        <input type="text" name="fragment">
+        <button type="submit">Wyślij</button>
+    </form>
+
+{% if fragment %}
+    <h1>Lista wyszukiwanych zespołów zawierających "{{ fragment }}" </h1>
+    {% for zespol in lista_zespolow %}
+        {% if fragment in zespol %}
+            <ul>
+                {{ zespol }}
+            </ul>
+        {% endif %}
+    {% endfor %}
+
+{% else %}
+    <h1>
+        Lista zespołów
+    </h1>
+    {% for zespol in lista_zespolow %}
+        <ul>
+            {{zespol}}
+        </ul>
+    {% endfor %}
+{% endif %}
+
+
 </body>
 </html>
