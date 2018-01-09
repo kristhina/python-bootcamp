@@ -5,8 +5,12 @@
     <title>form adding 2 numbers</title>
 </head>
 <body>
-    {% if liczba1 and liczba2 %}
-    {{ liczba1 }} + {{ liczba2 }} = {{liczba1|int + liczba2|int}}
+    {% if result %}
+    {{ result }}
+    {% endif %}
+
+    {% if error %}
+    Please, write two integer numbers!
     {% endif %}
 
     <form action="/add_form" method="post">
