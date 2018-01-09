@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>konto</title>
+</head>
+<body>
+
+<h1>Lista przelewów</h1>
+{% for przelew in lista_przelewow %}
+<li>{{przelew['numer_konta'], przelew['kwota']}}
+{% endfor %}
+<h1> Stan konta </h1>
+{{stan_konta}}
+
+
+<form action="/konto" method="post">
+        <label for="kwota"> Kwota:</label>
+        <input type="text" name="kwota">
+        <label for="nr_konta"> Numer konta </label>
+        <input type=text" name = "nr_konta">
+        <button type="submit">Wyślij</button>
+</form>
+</body>
+</html>
