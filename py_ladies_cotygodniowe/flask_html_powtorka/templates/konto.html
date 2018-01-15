@@ -7,12 +7,26 @@
 <body>
 
 <h1>Lista przelewów</h1>
-{% for przelew in lista_przelewow %}
-<li>{{przelew['numer_konta'], przelew['kwota']}}
-{% endfor %}
+<table border>
+    <tr>
+        <th>
+            numer konta
+        </th>
+        <th>
+            kwota przelewu
+        </th>
+    </tr>
+    {% for przelew in lista_przelewow %}
+    <tr>
+        <td> {{przelew['numer_konta']}}</td>
+        <td> {{przelew['kwota']}}</td>
+    </tr>
+    {% endfor %}
+</table>
 <h1> Stan konta </h1>
-{{stan_konta}}
+Stan konta: {{stan_konta}}
 
+<h1>Wykonaj przelew:</h1>
 
 <form action="/konto" method="post">
         <label for="kwota"> Kwota:</label>

@@ -25,7 +25,7 @@ def konto():
         kwota = request.form.get("kwota")
         nr_konta = request.form.get("nr_konta")
         stan_konta -= int(kwota)
-        lista_przelewow.append({"kwota":kwota, "numer_konta": nr_konta})
+        lista_przelewow.append({"kwota": kwota, "numer_konta": nr_konta})
         return redirect("/konto")
 
     return render_template("konto.html", stan_konta=stan_konta, lista_przelewow=lista_przelewow)

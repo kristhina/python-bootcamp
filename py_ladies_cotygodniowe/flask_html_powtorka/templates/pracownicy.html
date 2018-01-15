@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pracownicy</title>
+</head>
+<body>
+
+<table border>
+    <tr>
+        <th> imię </th>
+        <th> nazwisko </th>
+        <th> link </th>
+    </tr>
+    {% for pracownik in pracownicy %}
+    <tr>
+        <td> {{ pracownik['imie'] }} </td>
+        <td> {{ pracownik['nazwisko'] }} </td>
+        <td> <a href="{{ pracownik['link']}}">{{pracownik['text']}}</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
