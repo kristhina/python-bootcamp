@@ -6,3 +6,4 @@
 # Sześcian: V = a^3
 # Prostopadłościan: V = a*b*c
 # Kula: V = 4/3 * pi * r^3
+

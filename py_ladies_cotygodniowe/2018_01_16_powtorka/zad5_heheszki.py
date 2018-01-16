@@ -13,3 +13,24 @@
 # Więcej informacji o podatności aplikacji z 5a:
 # https://sekurak.pl/czym-jest-podatnosc-path-traversal/
 # https://www.owasp.org/index.php/Path_Traversal
+
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route("/", methods = ["GET"])
+def choose_file():
+#    akceptowane = ['hehe.txt', 'heheszki.json', 'beczka_smiechu.txt']
+    data=request.args
+    filename = data.get('file', 'default')
+
+    content = ''
+    try:
+        with open(os.path.basename(filename),'r') as f:
+            content = f.read()
+        return content
+    except FileNotFound:
+        return "cannot read file"
+
+app.run(debug=True)
+

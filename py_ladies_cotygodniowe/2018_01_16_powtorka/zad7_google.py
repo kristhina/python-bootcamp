@@ -4,9 +4,12 @@
 # lub na:
 # "http://thecatapi.com/api/images/get"
 
-from flask import Flask
+from random import choice
+from flask import Flask, request, render_template, redirect
 
 app = Flask(__name__)
 
 @app.route("/", methods = ["GET", "POST"])
-def przekierowanie():
+def google():
+        if request.method == 'POST':
+            return redirect(choice) # i tutaj dodać te dwa linki
