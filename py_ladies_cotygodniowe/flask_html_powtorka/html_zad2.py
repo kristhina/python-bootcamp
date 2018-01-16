@@ -47,11 +47,11 @@ def dane_pracownikow():
 def dane_pracownika(ident):
     for pracownik in pracownicy:
         if int(pracownik.id) == int(ident):
-           #  link = 'pracownik/'+str(ident)
             if request.method == "POST":
                 pracownicy.remove(pracownik)
+                return render_template("pracownicy.html", pracownicy = pracownicy)
 
-            return render_template("pracownik.html", pracownik=pracownik)
+            return render_template("pracownik.html", pracownik=pracownik, id=ident)
 
 
 @app.route('/')
