@@ -15,11 +15,40 @@ from flask import Flask, request, render_template, redirect
 
 app = Flask(__name__)
 
+
+def szyfrowanie(tekst, przesuniecie):
+    nowe_litery = []
+    for letter in tekst:
+        o = ord(letter)
+        new_o = o + int(przesuniecie)
+        if new_o > 122:
+            new_o -= 26
+        nowe_litery.append(chr(new_o))
+    zaszyfrowany_tekst = ''.join(nowe_litery)
+    return zaszyfrowany_tekst
+
+
 @app.route('/', methods=['GET', 'POST'])
 def cezar_handler():
+    encrypted_text = False
     if request.method == 'POST':
-        pass # tu dodaj obsluge "szyfrowania"
+        tekst = request.form.get("text")
+        przesuniecie = request.form.get("offset")
+        encrypted_text = szyfrowanie(tekst, przesuniecie)
 
-    return render_template('cezar.html')
+    return render_template('cezar.html', encrypted_text=encrypted_text)
+
 
 app.run(debug=True)
+
+
+def szyfrowanie(tekst, przesuniecie):
+    nowe_litery = []
+    for letter in tekst:
+        o = ord(letter)
+        new_o = o + przesuniecie
+        if new_o > 122:
+            new_o -= 26
+        nowe_litery.append(new_o)
+    zaszyfrowany_tekst = ''.join(nowe_litery)
+    return zaszyfrowany_tekst

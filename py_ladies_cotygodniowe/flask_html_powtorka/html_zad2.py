@@ -47,6 +47,7 @@ def dane_pracownikow():
 def dane_pracownika(ident):
     for pracownik in pracownicy:
         if int(pracownik.id) == int(ident):
+           #  link = 'pracownik/'+str(ident)
             if request.method == "POST":
                 pracownicy.remove(pracownik)
 
