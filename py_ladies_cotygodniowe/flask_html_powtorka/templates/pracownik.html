@@ -5,6 +5,8 @@
     <title>pracownik</title>
 </head>
 <body>
+
+<h1> Dane pracownika </h1>
 <table border>
     <tr>
         <td>imię:</td>
@@ -22,5 +24,11 @@
         <td>{{ pracownik['opis']}}</td>
     </tr>
 </table>
+
+<h1> Czy usunąć pracownika z listy pracowników? </h1>
+<form action="/pracownik/" method="post">
+       <button type="submit">Tak</button>
+</form>
+
 </body>
 </html>

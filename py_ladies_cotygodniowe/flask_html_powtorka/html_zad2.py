@@ -5,7 +5,7 @@
 # W każdym wierszu tabeli powinny znaleźć się imię, nazwisko pracownika
 # i dodatkowa pusta komórka - uzupełnimy ją w następnym zadaniu.
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -29,16 +29,33 @@ pracownik4 = Pracownik(4, "Remigiusz", "Wierciołek", 2310, "załatwi wszystko, 
 pracownicy = [pracownik1, pracownik2, pracownik3, pracownik4]
 
 
-@app.route('/pracownicy', methods=["GET"])
+@app.route('/pracownicy', methods=["GET", "POST"])
 def dane_pracownikow():
+    if request.method == "POST":
+        identyfikator = request.form.get("identyfikator")
+        imie = request.form.get("imie")
+        nazwisko = request.form.get("nazwisko")
+        placa = request.form.get("placa")
+        opis = request.form.get("opis")
+        pracownicy.append(Pracownik(identyfikator, imie, nazwisko, placa, opis))
+        return redirect("/pracownicy")
+
     return render_template("pracownicy.html", pracownicy=pracownicy)
 
 
-@app.route('/pracownik/<ident>', methods=['GET'])
+@app.route('/pracownik/<ident>', methods=['GET', 'POST'])
 def dane_pracownika(ident):
     for pracownik in pracownicy:
-        if pracownik.id == int(ident):
+        if int(pracownik.id) == int(ident):
+            if request.method == "POST":
+                pracownicy.remove(pracownik)
+
             return render_template("pracownik.html", pracownik=pracownik)
+
+
+@app.route('/')
+def przekierowanie():
+    return redirect('/pracownicy')
 
 
 app.run(debug=True)

@@ -6,6 +6,9 @@
 </head>
 <body>
 
+<h1>Lista pracowników:</h1>
+
+
 <table border>
     <tr>
         <th> imię </th>
@@ -20,6 +23,23 @@
     </tr>
     {% endfor %}
 </table>
+
+
+<h1>Dodaj nowego pracownika:</h1>
+
+<form action="/pracownicy" method="post">
+        <label for="identyfikator"> Identyfikator: </label>
+        <input type="text" name="identyfikator"><br>
+        <label for="imie"> Imię: </label>
+        <input type=text" name = "imie"><br>
+        <label for="nazwisko"> Nazwisko: </label>
+        <input type=text" name = "nazwisko"><br>
+        <label for="placa"> Płaca: </label>
+        <input type=text" name = "placa"><br>
+        <label for="opis"> Opis: </label>
+        <input type=text" name = "opis"><br>
+        <button type="submit">Wyślij</button>
+</form>
 
 </body>
 </html>
