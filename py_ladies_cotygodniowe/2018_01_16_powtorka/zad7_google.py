@@ -12,4 +12,8 @@ app = Flask(__name__)
 @app.route("/", methods = ["GET", "POST"])
 def google():
         if request.method == 'POST':
-            return redirect(choice) # i tutaj dodać te dwa linki
+            return redirect(choice(["http://thecatapi.com/api/images/get?format=src&type=gif",
+                                   "http://thecatapi.com/api/images/get"]))
+        return render_template("google.html")
+
+app.run(debug=True)
