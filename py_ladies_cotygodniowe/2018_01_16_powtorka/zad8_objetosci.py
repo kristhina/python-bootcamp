@@ -1,9 +1,50 @@
 # Kalkulator objętości
 # Stwórz - z wykorzystaniem klas i dziedziczenia - kalkulator objętości brył:
-# sześcianu, prostopadłościanu, stożka i kuli.
-# Powinien on wczytać od użytkownika opcję (0, 1, 2 lub 3) i w zależności od tego przyjąć
-# 3 argumenty, 2 lub 1 i obliczyć objętość. Na wszelki wypadek wzory na objętość podane poniżej.
-# Sześcian: V = a^3
-# Prostopadłościan: V = a*b*c
-# Kula: V = 4/3 * pi * r^3
+# sześcianu, prostopadłościanu, stożka i walca.
+
+from math import pi
+
+class Prostopadloscian:
+    def __init__(self, a, b, c):
+        self.c = c
+        self.b = b
+        self.a = a
+
+    def objetosc(self):
+        v = self.a * self.b * self.c
+        return v
+
+
+class Szescian(Prostopadloscian):
+    def __init__(self, a):
+        super(Szescian, self).__init__(a, a, a)
+
+
+class Walec:
+    def __init__(self, r, h):
+        self.h = h
+        self.r = r
+
+    def objetosc(self):
+        v = pi * self.r * self.r * self.h
+        return v
+
+
+class Stozek(Walec):
+    def objetosc(self):
+        return super().objetosc()*(1/3)
+
+
+abc = Prostopadloscian(2, 3, 2)
+print(abc.objetosc())
+
+aaa = Szescian(3)
+print(aaa.objetosc())
+
+w = Walec(1, 1)
+print(w.objetosc())
+
+s = Stozek(1, 1)
+print(s.objetosc())
+
 

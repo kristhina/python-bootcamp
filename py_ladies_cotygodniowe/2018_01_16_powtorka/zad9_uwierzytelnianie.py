@@ -31,12 +31,12 @@ def new_user():
             users[user_name] = User(user_name, user_password)
             doubled = False
         else:
-            doubled= True
+            doubled = True
         return redirect('/users')
-    return render_template("users.html", dubbled = doubled)
+    return render_template("users.html", dubbled=doubled)
 
 
-@app.route('/users/login', methods = ["GET","POST"])
+@app.route('/users/login', methods=["GET", "POST"])
 def login_user():
     global wrong
 
@@ -44,13 +44,12 @@ def login_user():
         user_name = request.form.get("name")
         user_password = request.form.get("password")
         if user_name in users and users[user_name].password == user_password:
-            users[user_name].login=True
+            users[user_name].login = True
             wrong = False
         else:
             wrong = True
         return redirect('/users/login')
-    return render_template("users_login.html", wrong = wrong)
-
+    return render_template("users_login.html", wrong=wrong)
 
 
 @app.route('/list_of_users', methods=["GET"])
