@@ -5,7 +5,15 @@
     <title>google</title>
 </head>
 <body>
-<img src="googlelogo_color_272x92dp.png">
+<img src="{{ url_for('static', filename='googlelogo_color_272x92dp.png')}}">
+<form method="post">
+        <table>
+                <tr>
+                    <td><textarea name="text"></textarea></td>
+                </tr>
+        </table>
+        <button type="submit">Szukaj w Google</button>
+</form>
 
 
 </body>

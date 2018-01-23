@@ -21,7 +21,6 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def choose_file():
-    #    akceptowane = ['hehe.txt', 'heheszki.json', 'beczka_smiechu.txt']
     data = request.args
     filename = data.get('file', 'default')
 
@@ -30,7 +29,7 @@ def choose_file():
             content = f.read()
         return content
     except FileNotFoundError:
-        return "cannot read file"
+        return "Please, write correct file name"
 
 
 app.run(debug=True)

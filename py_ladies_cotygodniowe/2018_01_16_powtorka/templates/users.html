@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<h1> New user:</h1>
+
+<form action="/users" method="post">
+        <label for="name"> Name: </label>
+        <input type="text" name="name"><br>
+        <label for="password"> Password: </label>
+        <input type=text" name = "password"><br>
+        <button type="submit">Add new user</button>
+</form>
+
+{% if doubled %}
+<h1> Warning!</h1>
+"We already have user of that name in our database"
+{% endif %}
+
+<h1> Login: </h1>
+Click <a href = '/users/login'> here </a> to login.
+
+</body>
+</html>

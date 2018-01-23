@@ -49,7 +49,7 @@ def dane_pracownika(ident):
         if int(pracownik.id) == int(ident):
             if request.method == "POST":
                 pracownicy.remove(pracownik)
-                return render_template("pracownicy.html", pracownicy = pracownicy)
+                return render_template("pracownicy.html", pracownicy=pracownicy)
 
             return render_template("pracownik.html", pracownik=pracownik, id=ident)
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users Login</title>
+</head>
+<body>
+<h1> Login: </h1>
+
+<form action="/users/login" method="post">
+        <label for="name"> Name: </label>
+        <input type="text" name="name"><br>
+        <label for="password"> Password: </label>
+        <input type=text" name = "password"><br>
+        <button type="submit">Login</button>
+</form>
+{% if wrong %}
+"Your name or password is incorrect!"
+{% endif %}
+
+</body>
+</html>
