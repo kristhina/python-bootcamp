@@ -56,37 +56,45 @@ def time(czas, jednostka):
         return hour * 3600 + minute * 60 + second
     elif jednostka == 'minute':
         return hour * 60 + minute + round(second / 60, 2)
-    else:
-        return hour + round(minute / 60, 2) + round(second / 3600, 2)
+    return hour + round(minute / 60, 2) + round(second / 3600, 2)
 
 
 print(time('01:15:59', 's'))
 print(time('01:15:59', 'm'))
 print(time('01:15:59', 'h'))
 
-result = []
-r2 = []
-
 
 def flatten(arr):
-    for el in arr:
-        if isinstance(el, list):
-            flatten(el)
+    """
+    Docstring for function 'flatten'
+    :param arr:
+    :return:
+    """
+    result = []
+    for element in arr:
+        if isinstance(element, list):
+            flatten(element)
         else:
-            result.append(el)
+            result.append(element)
     return result
 
 
 def flatten_nr(arr):
+    """
+    Docstring for function 'flatten_nr'
+    :param arr:
+    :return:
+    """
+    rr2 = []
     while True:
-        el = arr.pop()
-        if not isinstance(el, list):
-            r2.append(el)
+        element = arr.pop()
+        if not isinstance(element, list):
+            rr2.append(element)
         else:
-            arr = el
-        if len(arr) == 0:
+            arr = element
+        if not arr:
             break
-    return r2[::-1]
+    return rr2[::-1]
 
 
 print(flatten([[[[[[[[[['a'], 'b']]], 'c']]], 'd']], 'e']))
@@ -94,48 +102,71 @@ print(flatten_nr([[[[[[[[[['a'], 'b']]], 'c']]], 'd']], 'e']))
 
 
 def weird_power(num):
+    """
+    Docstring for weird_power
+    :param num:
+    :return:
+    """
     return num ** 2, num ** 3
 
 
-def calculate(afun, data):
-    return afun(weird_power(data))
+def calculate(afun, data1):
+    """
+    Docstring for calculate
+    :param afun:
+    :param data1:
+    :return:
+    """
+    return afun(weird_power(data1))
 
 
-CONSTANT_A = 3
+CONSTANT_A = [3]
 
 
 def sum_a(whatever):
+    """
+    Docstring for sum_a
+    :param whatever:
+    :return: number
+    """
     return sum(whatever)
 
 
-b = sum_a(CONSTANT_A)
-c = calculate(b, CONSTANT_A)
-print(c)
+MY_B = sum_a(CONSTANT_A)
+MY_C = calculate(MY_B, CONSTANT_A)
+print(MY_C)
 
 
 def sorted_a(whatever):
+    """
+    Docstring for sorted_a
+    :param whatever:
+    :return: sorted whatever
+    """
     return sorted(whatever)
 
 
-d = sorted_a(CONSTANT_A)
-f = calculate(d, CONSTANT_A)
-print(f)
+MY_D = sorted_a(CONSTANT_A)
+MY_F = calculate(MY_D, CONSTANT_A)
+print(MY_F)
 
 
-def power_2(a):
-    return (a + 0.5 * a) ** 2
+def power_2(number):
+    """
+    Docstring for power_2
+    :param number:
+    :return:
+    """
+    return (number + 0.5 * number) ** 2
 
 
 print(power_2(3))
+DATA = [(9, 0), (1, 2), (3, 4)]
+SORTED_DATA = sorted(DATA, key=lambda a: a[0], reverse=False)
+MAX_DATA = max(DATA)
+MIN_DATA = min(DATA)
+FILTERED_DATA = list(filter(lambda a: sum(a) > 5, DATA))
 
-x = lambda a: (a + 0.5 * a) ** 2
-print(x(3))
-
-
-data = [(9, 0), (1, 2), (3, 4)]
-sorted_data = sorted(data, key=lambda a: a[0], reverse=False)
-max_data = max(data, key=lambda a: max(a))
-min_data = min(data, key=lambda a: max(a))
-filtered_data = list(filter(lambda a: sum(a) > 5, data))
-
-print({'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': 1}}}}}}}}}}}}}}}}}}}}}}})
+INSIDE = {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': {'a': 1}}}}}}}}}}
+INSIDE2 = {'a': {'a': {'a': {'a': {'a': {'a': INSIDE}}}}}}
+print({'a': {'a': {'a': {'a': {'a': {'a': {'a': INSIDE2}}}}}}})
