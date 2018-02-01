@@ -6,11 +6,26 @@
 </head>
 <body>
 
-<form method="post" action = "">
-    <input type = "text"
+<form method="post" action = "/new-post">
+    <label for="subject"> Tytuł: </label>
+    <input type="text" name = "subject">
+    <label for="content"> Treść: </label>
+    <input type = "text" name="content">
+    <button type = "submit"> Prześlij</button>
 
 </form>
 
+<div class = "large-6 columns">
+    <h3> Blog Posts:</h3>
+    <ul>
+        {% for post in blogposts %}
+        <li id="{{post.id }}">
+            <h2> {{ post.subject }} </h2>
+            {{ post.text }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
 
 
