@@ -19,6 +19,10 @@ class Product:
         self.name = name
         self.my_id = my_id
 
+    def __str__(self):
+        return "{}: {} kalorii, {} białka, {} tłuszczy, {} węglowodanów".\
+            format(self.name, self.calories, self.protein, self.fat, self.carbohydrates)
+
 
 class Ingredient:
     """
@@ -30,6 +34,9 @@ class Ingredient:
         self.product = product
         self.amount = amount
 
+    def __str__(self):
+        return "{}, {}".format(self.product.name, self.amount)
+
 
 class Dish:
     def __init__(self, dish_id):
@@ -38,6 +45,16 @@ class Dish:
 
     def add_ingredient(self, ingredient):
         self.list_of_ingredients.append(ingredient)
+
+    def __str__(self):
+        a = [str(item) for item in self.list_of_ingredients]
+        return "Lista składników: {}".format(a)
+
+    def count_weight(self):
+        amount = 0
+        for ingredient in self.list_of_ingredients:
+            amount += ingredient.amount
+        return amount
 
 
 
@@ -53,3 +70,17 @@ class User:
     pass
 
 
+marchew = Product(1, "marchew", 25, 2, 1, 15)
+jablko = Product(2, "jabłko", 30, 3, 4, 17)
+
+ingr1 = Ingredient(55, marchew)
+ingr2 = Ingredient(50, jablko)
+
+surowka = Dish(1)
+surowka.add_ingredient(ingr1)
+surowka.add_ingredient(ingr2)
+
+print(marchew)
+print(ingr1)
+print(surowka)
+print(surowka.count_weight())
