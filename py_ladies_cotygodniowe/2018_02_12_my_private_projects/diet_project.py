@@ -32,10 +32,15 @@ class Ingredient:
     """
     def __init__(self, amount, product):
         self.product = product
-        self.amount = amount
+        self.ingredient_amount = amount
+        self.ingredient_calories = self.ingredient_amount * self.product.calories / 100
+        self.ingredient_protein = self.ingredient_amount * self.product.protein / 100
+        self.ingredient_fat = self.ingredient_amount * self.product.fat / 100
+        self.ingredient_carbohydrates = self.ingredient_amount * self.product.carbohydrates / 100
 
     def __str__(self):
-        return "{}, {}".format(self.product.name, self.amount)
+        return "{} g produktu {}".format(self.ingredient_amount, self.product.name)
+
 
 
 class Dish:
@@ -53,8 +58,26 @@ class Dish:
     def count_weight(self):
         amount = 0
         for ingredient in self.list_of_ingredients:
-            amount += ingredient.amount
+            amount += ingredient.ingredient_amount
         return amount
+
+    def count_calories(self):
+        calories = 0
+        for ingredient in self.list_of_ingredients:
+            calories += ingredient.ingredient_calories
+        return calories
+
+    def count_fat(self):
+        fat = 0
+        for ingredient in self.list_of_ingredients:
+            fat += ingredient.ingredient_fat
+        return fat
+
+    def count_protein(self):
+        protein = 0
+        for ingredient in self.list_of_ingredients:
+            protein += ingredient.ingredient_protein
+        return protein
 
 
 
