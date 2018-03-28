@@ -10,8 +10,8 @@ from collections import Counter
 tekst = requests.get("https://pylove.org/exercise/1_19_2").text
 c = Counter(tekst)
 mc = c.most_common(6)
-slowo = ''
+word = ''
 for k, v in mc:
-    slowo += k
-print(slowo)
+    word += k
+print(word)
 

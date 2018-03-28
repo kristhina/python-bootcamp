@@ -20,24 +20,26 @@ print(t1)
 print(roznica)
 
 t2 = datetime.now()
-an_url = "https://pylove.org/exercise/1_19_2"
-data = requests.get(an_url).text
-zliczacz = defaultdict(int)
-for let in data:
-    zliczacz[let] += 1
-slowo = ""
+
+tekst = requests.get("https://pylove.org/exercise/1_19_2").text
+
+d = defaultdict(int)
+for k in tekst:
+    d[k] += 1
+
+word = ""
 for _ in range(6):
     a_max = 0
     a_let = ''
 
-    for k, v in zliczacz.items():
-        if v>a_max:
+    for k, v in d.items():
+        if v > a_max:
             a_max = v
             a_let = k
-    del zliczacz[a_let]
-    slowo+= a_let
+    del d[a_let]
+    word += a_let
 
-print(slowo)
+print(word)
 
 t3 = datetime.now()
 roznica1 = t3-t2
