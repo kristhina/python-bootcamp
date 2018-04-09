@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47b953c9-6c47-450a-a683-cdbde75f7774" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad3.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad4.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad5.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Data Analysis/notatniki prowadzącego/seaborn - my tests.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/python-bootcamp.iml" afterPath="$PROJECT_DIR$/.idea/python-bootcamp.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +41,8 @@
       <file leaf-file-name="zad2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-299">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#170#185#0" expanded="true" />
               </folding>
@@ -56,8 +53,8 @@
       <file leaf-file-name="zad3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state relative-caret-position="432">
+              <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding>
                 <element signature="e#107#136#0" expanded="true" />
               </folding>
@@ -65,11 +62,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zad5.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zad5.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="198">
               <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moj_seaborn.ipynb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data Analysis/moj_seaborn.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seaborn - my tests.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data Analysis/notatniki prowadzącego/seaborn - my tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zad1_files_xyz.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_01_16_powtorka/zad1_files_xyz.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,7 +106,7 @@
       <file leaf-file-name="zad4.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
+            <state relative-caret-position="252">
               <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding>
                 <element signature="e#253#268#0" expanded="true" />
@@ -150,6 +178,7 @@
         <option value="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad2.py" />
         <option value="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad4.py" />
         <option value="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad5.py" />
+        <option value="$PROJECT_DIR$/Data Analysis/notatniki prowadzącego/seaborn - my tests.py" />
       </list>
     </option>
   </component>
@@ -174,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,42 +213,42 @@
             <path>
               <item name="python-bootcamp" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-bootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="Data Analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-bootcamp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-bootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="Data Analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="notatniki prowadzącego" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-bootcamp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-bootcamp" type="462c0819:PsiDirectoryNode" />
               <item name="py_ladies_cotygodniowe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python-bootcamp" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-bootcamp" type="462c0819:PsiDirectoryNode" />
               <item name="py_ladies_cotygodniowe" type="462c0819:PsiDirectoryNode" />
-              <item name="2018_03_13_docker" type="462c0819:PsiDirectoryNode" />
+              <item name="2018_01_16_powtorka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python-bootcamp" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-bootcamp" type="462c0819:PsiDirectoryNode" />
               <item name="py_ladies_cotygodniowe" type="462c0819:PsiDirectoryNode" />
-              <item name="2018_03_20 testy jednostkowe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-bootcamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-bootcamp" type="462c0819:PsiDirectoryNode" />
-              <item name="py_ladies_cotygodniowe" type="462c0819:PsiDirectoryNode" />
-              <item name="2018_03_20 testy jednostkowe" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-bootcamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-bootcamp" type="462c0819:PsiDirectoryNode" />
-              <item name="py_ladies_cotygodniowe" type="462c0819:PsiDirectoryNode" />
-              <item name="2018_03_27_zaawansowane_konstrukcje" type="462c0819:PsiDirectoryNode" />
+              <item name="2018_01_16_powtorka" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/devel/diet_manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -245,20 +273,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.zad5">
-    <configuration name="zad1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.seaborn - my tests">
+    <configuration name="seaborn - my tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Analysis/notatniki prowadzącego" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python-bootcamp" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Analysis/notatniki prowadzącego/seaborn - my tests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -353,19 +381,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Testy" />
-      <item index="1" class="java.lang.String" itemvalue="Python.zad1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.zad2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.zad3" />
-      <item index="4" class="java.lang.String" itemvalue="Python.zad4" />
-      <item index="5" class="java.lang.String" itemvalue="Python.zad5" />
+      <item index="1" class="java.lang.String" itemvalue="Python.zad2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.zad3" />
+      <item index="3" class="java.lang.String" itemvalue="Python.zad4" />
+      <item index="4" class="java.lang.String" itemvalue="Python.zad5" />
+      <item index="5" class="java.lang.String" itemvalue="Python.seaborn - my tests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.zad5" />
-        <item index="1" class="java.lang.String" itemvalue="Python.zad2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.zad4" />
-        <item index="3" class="java.lang.String" itemvalue="Python.zad3" />
-        <item index="4" class="java.lang.String" itemvalue="Python.zad1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.seaborn - my tests" />
+        <item index="1" class="java.lang.String" itemvalue="Python.zad5" />
+        <item index="2" class="java.lang.String" itemvalue="Python.zad2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.zad4" />
+        <item index="4" class="java.lang.String" itemvalue="Python.zad3" />
       </list>
     </recent_temporary>
   </component>
@@ -418,19 +446,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="27" width="1299" height="743" extended-state="6" />
+    <frame x="67" y="25" width="1213" height="999" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18652038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18571429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5620915" sideWeight="0.5031348" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5610599" sideWeight="0.4968652" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5620915" sideWeight="0.4968652" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24917763" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -447,17 +475,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5620915" sideWeight="0.5031348" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5610599" sideWeight="0.4968652" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5620915" sideWeight="0.4968652" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18652038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18571429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24917763" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -482,20 +510,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/flask_html_powtorka/html_zad2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="77" lean-forward="true" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/zad7_html.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/templates/lista_zespolow.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -563,13 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_01_16_powtorka/zad1_files_xyz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -713,13 +720,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/pylove/lib/python3.6/site-packages/py/_path/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="667" column="0" lean-forward="false" selection-start-line="667" selection-start-column="0" selection-end-line="667" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/pylove/lib/python3.6/site-packages/py/_path/local.py" />
     <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_13_docker/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -781,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,9 +803,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-351">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#107#136#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#253#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#170#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_01_16_powtorka/zad1_files_xyz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Analysis/moj_seaborn.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
@@ -821,41 +861,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding>
-            <element signature="e#107#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <element signature="e#253#268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#170#185#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/py_ladies_cotygodniowe/2018_03_27_zaawansowane_konstrukcje/zad5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="198">
           <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Analysis/notatniki prowadzącego/seaborn - my tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
