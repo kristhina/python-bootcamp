@@ -4,3 +4,23 @@
 
 # metoda: group dict
 # user agent to przeglądarka - do wrzucenia od Mozilla do końca ???
+
+import re
+import json
+
+with open('access_log.txt', 'r', encoding="utf8") as file:
+    logs = file.readlines()
+
+for log in logs:
+    try:
+        m = re.match(r'.+\[(?P<date>.+)\].+(?P<method>POST|PUT|DELETE) (?P<uri>\S+) \S+ (?P<status_code>\d{3}).+\"-\" \"(?P<user_agent>.+)\"', log)
+        result = m.groupdict()
+        json_result = json.dumps(result)
+        print(json_result)
+    except AttributeError:
+        pass
+
+
+
+
+

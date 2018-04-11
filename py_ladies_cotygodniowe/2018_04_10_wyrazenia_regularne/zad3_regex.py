@@ -5,11 +5,9 @@
 # Podpowiedź: użyj znaku nowej linii.
 
 import re
-encoding = "utf8"
 
 with open('program_pylove.txt', 'r') as file:
     tekst = file.read()
-
 
 workshop_list = re.findall(r'(\d{4}\.\d{2}\.\d{2})\s-\s(.+)', tekst)
 
@@ -17,8 +15,8 @@ workshops = {}
 for workshop_number, (data, info) in enumerate(workshop_list, 1):
     info = re.split(r' - ', info)
     workshops[workshop_number] = {
-        'date' : data,
-        'title' : ' - '.join(info[0:-1]),
-        'mentor' : info [-1] if len (info) != 1 else ''
+        'date': data,
+        'title': ' - '.join(info[0:-1]),
+        'mentor': info[-1] if len(info) != 1 else ''
     }
 print(workshops)
