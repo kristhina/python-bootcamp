@@ -16,12 +16,14 @@
 #             d = a*b + c
 #             print(d)
 
-print(10*' '+'*')
-for i in range(10):
-    print(' '*(10-i) + i*'/' + i*'\\')
+# print(10*' '+'*')
+# for i in range(10):
+#     print(' '*(10-i) + i*'/' + i*'\\')
+#
+# k = 13
+# print(k*' '+'*')
 
-k = 13
-print(k*' '+'*')
+k = int(input("jaką chcesz mieć dużą choinkę "))
 for i in range(k):
     if i % 3 == 2:
         print(" "*(k-i) + '/' + '*' + (i-2)*'/' + (i-2)*'\\' + '*' + '\\')
