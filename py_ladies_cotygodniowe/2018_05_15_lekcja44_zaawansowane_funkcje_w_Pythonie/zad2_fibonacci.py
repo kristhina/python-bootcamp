@@ -8,4 +8,10 @@ def fib():
         a, b = b, a+b
 
 
+for f in fib():
+    print(f)
+    if f>20:
+        break
+
+
 
